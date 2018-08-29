@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.5"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+    x:<input type="number" id="x" /> y:
+    <input type="number" id="y" />
+    <input type="button" id="append" value="submit" />
+    <canvas id="myChart" style="position: relative; height:400px; width:600px"></canvas>
+</body>
+<script>
+    var X = [];
+    var y = [];
+    document.getElementById('x').value = 1;
+    const model = tf.sequential();
+    model.add(tf.layers.dense({ units: 128, inputShape: [1] }))
+    model.add(tf.layers.dense({ units: 128, inputShape: [128], activation: "sigmoid" }))
+    model.add(tf.layers.dense({ units: 1, inputShape: [128] }))
+    let optimizer = tf.train.adam(0.01);
+    model.compile({ loss: 'meanSquaredError', optimizer })
+
+
+    document.getElementById('y').value = 1;
+    document.getElementById('append').onclick = function () {
+        let xt = document.getElementById('x').value;
+        let yt = document.getElementById('y').value;
+        X.push(xt);
+        y.push(yt);
+        document.getElementById('x').value = parseInt(xt) + 1;
+        model.fit(tf.tensor(X), tf.tensor(y), { epochs: 125 }).then(() => {
+            bestFit = model.predict(tf.tensor(X, [X.length, 1])).dataSync();
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+                width: "600px",
+                height: "400px",
+                // The data for our dataset
+                data: {
+                    labels: X,
+                    datasets: [{
+                        label: "Original Data",
+
+                        borderColor: 'rgb(22, 99, 132)',
+                        data: y
+                    },
+                    {
+                        label: "Model Best Fit",
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        data: bestFit
+                    }
+                    ]
+                },
+
+                // Configuration options go here
+                options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }
+            });
+        })
+
+    };
+</script>
+
+</html>
