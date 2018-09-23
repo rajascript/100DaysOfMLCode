@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ed9d556-9b1c-4e3f-8eb3-76a992193f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sentimentAnalys.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentimentAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180916234657.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180918000627.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180918000628.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180918000857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180918000858.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000031.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000032.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000131.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000132.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000323.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919000324.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180919001021.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180920002028.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180920002029.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180920002625.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180920002626.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/.history/cryptopredictor_20180920002710.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/crypto_data/BCH-USD.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/crypto_data/BTC-USD.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/crypto_data/ETH-USD.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/crypto_data/LTC-USD.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[day72, day73, day74, day75, day76]/cryptopredictor.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +38,12 @@
     <session id="1749813539">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,7 +71,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -167,7 +186,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

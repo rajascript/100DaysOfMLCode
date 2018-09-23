@@ -14,7 +14,7 @@ SEQ_LEN = 60
 FUTURE_PREDICT_PERIOD = 3
 RATIO_PREDICT_TARGET = "LTC-USD"
 EPOCHS = 10
-BATCH_SIZE = 64
+BATCH_SIZE = 20000
 NAME = f"{SEQ_LEN}-SEQ-{FUTURE_PREDICT_PERIOD}-PRED-{int(time.time())}"  # a unique name for the model
 
 
@@ -158,8 +158,9 @@ history = model.fit(
     epochs=EPOCHS,
     validation_data=(validationx, validationy),
     callbacks=[tensorboard, checkpoint],
-)
 
+)
+print("bbxa");
 score = model.evaluate(validationx, validationy, verbose=0)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
