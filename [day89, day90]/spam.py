@@ -1,6 +1,8 @@
 
 import pandas as pd
 import numpy as np
+from nltk.corpus import stopwords
+import nltk
 pd.set_option('display.max_columns', None)
 
 
@@ -29,6 +31,70 @@ print(y[:10])
 text_messages = df[1]
 print(text_messages)
 
-# replace email with mailadd
 
-text_messages.str.replace(r'^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$','mailaddr')
+processed = text_messages.str.replace(r'^.+@[^\.].*\.[a-z]{2,}$',
+                                      'emailaddress')
+processed = processed.str.replace(r'^http\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$',
+                                  'webaddress')
+processed = processed.str.replace(r'£|\$', 'moneysymb')
+
+processed = processed.str.replace(r'^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$',
+                                  'phonenumbr')
+processed = processed.str.replace(r'\d+(\.\d+)?', 'numbr')
+
+processed = processed.str.replace(r'[^\w\d\s]', ' ')
+
+processed = processed.str.replace(r'\s+', ' ')
+
+processed = processed.str.replace(r'^\s+|\s+?$', '')
+
+processed = processed.str.lower()
+print(processed)
+
+
+
+
+
+# remove stop words from text messages
+
+stop_words = set(stopwords.words('english'))
+
+processed = processed.apply(lambda x: ' '.join(
+    term for term in x.split() if term not in stop_words))
+
+ps = nltk.PorterStemmer()
+
+processed = processed.apply(lambda x: ' '.join(
+    ps.stem(term) for term in x.split()))
+
+
+from nltk.tokenize import word_tokenize
+
+all_words = []
+
+for message in processed:
+    words = word_tokenize(message)
+    for w in words:
+        all_words.append(w)
+
+all_words = nltk.FreqDist(all_words)
+
+
+print('Number of words: {}'.format(len(all_words)))
+print('Most common words: {}'.format(all_words.most_common(15)))
+
+
+word_features = list(all_words.keys())[:1500]
+
+def find_features(message):
+    words = word_tokenize(message)
+    features = {}
+    for word in word_features:
+        features[word] = (word in words)
+
+    return features
+
+features = find_features(processed[0])
+for key, value in features.items():
+    if value == True:
+        print(key)
