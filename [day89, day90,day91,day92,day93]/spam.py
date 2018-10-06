@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from nltk.corpus import stopwords
 import nltk
+from sklearn import model_selection
 pd.set_option('display.max_columns', None)
 
 
@@ -98,3 +99,21 @@ features = find_features(processed[0])
 for key, value in features.items():
     if value == True:
         print(key)
+
+
+messages = list(zip(processed, y))
+
+
+seed = 1
+np.random.seed = seed
+np.random.shuffle(messages)
+
+
+featuresets = [(find_features(text), label) for (text, label) in messages]
+
+
+
+
+training, testing = model_selection.train_test_split(featuresets, test_size = 0.25, random_state=seed)
+print(len(training))
+print(len(testing))
