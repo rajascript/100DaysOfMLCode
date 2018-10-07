@@ -117,3 +117,78 @@ featuresets = [(find_features(text), label) for (text, label) in messages]
 training, testing = model_selection.train_test_split(featuresets, test_size = 0.25, random_state=seed)
 print(len(training))
 print(len(testing))
+
+
+from nltk.classify.scikitlearn import SklearnClassifier
+from sklearn.svm import SVC
+
+model = SklearnClassifier(SVC(kernel = 'linear'))
+
+
+model.train(training)
+
+
+accuracy = nltk.classify.accuracy(model, testing)*100
+print("SVC Accuracy: {}".format(accuracy))
+
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+
+names = ["K Nearest Neighbors", "Decision Tree", "Random Forest", "Logistic Regression", "SGD Classifier",
+         "Naive Bayes", "SVM Linear"]
+
+classifiers = [
+    KNeighborsClassifier(),
+    DecisionTreeClassifier(),
+    RandomForestClassifier(),
+    LogisticRegression(),
+    SGDClassifier(max_iter = 100),
+    MultinomialNB(),
+    SVC(kernel = 'linear')
+]
+
+models = zip(names, classifiers)
+
+for name, model in models:
+    nltk_model = SklearnClassifier(model)
+    nltk_model.train(training)
+    accuracy = nltk.classify.accuracy(nltk_model, testing)*100
+    print("{} Accuracy: {}".format(name, accuracy))
+
+from sklearn.ensemble import VotingClassifier
+
+names = ["K Nearest Neighbors", "Decision Tree", "Random Forest", "Logistic Regression", "SGD Classifier",
+         "Naive Bayes", "SVM Linear"]
+
+classifiers = [
+    KNeighborsClassifier(),
+    DecisionTreeClassifier(),
+    RandomForestClassifier(),
+    LogisticRegression(),
+    SGDClassifier(max_iter = 100),
+    MultinomialNB(),
+    SVC(kernel = 'linear')
+]
+
+models = list(zip(names, classifiers))
+
+nltk_ensemble = SklearnClassifier(VotingClassifier(estimators = models, voting = 'hard', n_jobs = -1))
+nltk_ensemble.train(training)
+accuracy = nltk.classify.accuracy(nltk_model, testing)*100
+print("Voting Classifier: Accuracy: {}".format(accuracy))
+
+txt_features, labels = list(zip(*testing))
+
+prediction = nltk_ensemble.classify_many(txt_features)
+
+print(classification_report(labels, prediction))
+
+pd.DataFrame(
+    confusion_matrix(labels, prediction),
+    index = [['actual', 'actual'], ['ham', 'spam']],
+    columns = [['predicted', 'predicted'], ['ham', 'spam']])
