@@ -1,0 +1,315 @@
+
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  {% block pagecontent %}
+    <section class="hero">
+        <div class="hero__intro">
+            <div class="hero__intro--head">#100DaysOfMLCode</div>
+            <p class="hero__intro--sub">challenge</p>
+        </div>
+    </section>
+    <section class="overview">
+        <div class="overview__sec1">
+            <iframe class="overview__sec1--video" src="https://www.youtube.com/embed/cuQMBj1cWPo?autoplay=1;modestbranding=1;controls=0;showinfo=0;rel=0;fs=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="overview__sec2">
+            <div class="overview__sec2__text overview__sec2--head"><span class="util__color--red">1</span> hour of
+                <span class="util__color--red">ML</span> Code</div>
+            <div class="overview__sec2__text overview__sec2--sub"><span class="util__color--red">for 100</span> days</div>
+            <div class="overview__sec2__text overview__sec2__rules">
+                <div class="overview__sec2__text overview__sec2__rules--intro">There are only 3 rules: </div>
+                <div class="overview__sec2__text overview__sec2__rules--rule">1. Make a public pledge using the
+                    #100DaysofMLCode hashtag on your favorite social media platform. </div>
+                <div class="overview__sec2__text overview__sec2__rules--rule">2. Make a public log of your work that
+                    you
+                    update daily, you can do this via GitHub a blog or a vlog. </div>
+                <div class="overview__sec2__text overview__sec2__rules--rule">3. if you see someone make a post using
+                    the #100DaysofMLCode hashtag, give it a like share or comment.</div>
+            </div>
+        </div>
+    </section>
+    <section class="logs">
+        <div class="logs__counter">
+            <div onclick="prevDay()" class="logs__counter--left"></div>
+            <div id="logs__counter--text" class="logs__counter--text">Day 0</div>
+            <div onclick="nextDay()" class="logs__counter--right"></div>
+        </div>
+        <div class="logs__container">
+            <div class="logs__social">
+                <div class="logs__social__twitter">
+                    <div class="tweetsComponent">
+                        <div class="tweetsComponent__user">
+                            <a class="util__noStyleLink" href="https://www.twitter.com/raja__raghav" target="_blank">
+                                <img class="tweetsComponent__user--image" src="/static/images/desktopraja1.png" alt="raja"
+                                    height="40px" width="auto">
+                            </a>
+                            <div class="tweetsComponent__user__details">
+                                <div class="tweetsComponent__user__details--name">
+                                    <a class="util__noStyleLink" href="https://www.twitter.com/raja__raghav" target="_blank">Raja
+                                        Raghav</a>
+                                </div>
+                                <div class="tweetsComponent__user__details--handle">
+                                    @raja__raghav
+                                </div>
+                            </div>
+                            <img class="tweetsComponent__user--twitterLogo" src="/static/images/twitterlogosmall1.png" alt="twitter logo"
+                                height="13px" width="auto">
+                        </div>
+                        <div id="tweetsComponent__text" class="tweetsComponent__text">
+                            "#100DaysOfMLCode \n#Day0 https://t.co/D5vKHOOuM3"
+
+                        </div>
+                        <div id="tweetsComponent__date" class="tweetsComponent__date">
+                            Thu Jul 05 16:12:52 +0000 2018
+                        </div>
+                    </div>
+                </div>
+                <div class="logs__social__insta">
+                    <img id="logs__social__insta--story" class="logs__social__insta--story" src="/static/images/insta/d0.jpg" />
+                </div>
+            </div>
+            <div class="logs__code">
+                <div class="logs__code--gb">
+                    <a class="github__icon" target="blank_" href="https://github.com/rajaraghav/100DaysOfMLCode">
+                        <img src="/static/images/gb.png" />
+                    </a>
+                </div>
+                <pre><code id="logs__code" class="language-css">
+                        import numpy as np;
+
+                        np.random.rand(5)+1;
+
+                        print("#100daysofMLcode");
+                </code></pre>
+            </div>
+        </div>
+    </section>
+    <section class="support">
+        <div class="support__intro">
+            <p class="support__intro--head">
+                Mad love❤️ and support🙌🏼
+            </p>
+            <p class="support__intro--sub">
+                Shoutout📢 to all the supporters.
+            </p>
+        </div>
+        <div class="support__carousal">
+            <a class="support__carousal--item" data-hover="Ayush Jindal"><img
+                    class="support__carousal--item--img" src="/static/images/people/1.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Azime Setol"><img
+                    class="support__carousal--item--img" src="/static/images/people/2.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Sergio Sánchez Vallés"><img
+                    class="support__carousal--item--img" src="/static/images/people/3.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Mike 'Broski' "><img
+                    class="support__carousal--item--img" src="/static/images/people/4.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Chandan Kapoor"><img
+                    class="support__carousal--item--img" src="/static/images/people/5.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Siya Sharma"><img
+                    class="support__carousal--item--img" src="/static/images/people/6.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Siraj Raval"><img
+                    class="support__carousal--item--img" src="/static/images/people/7.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Bhaskar Parashar"><img
+                    class="support__carousal--item--img" src="/static/images/people/8.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Gurpreet gill"><img
+                    class="support__carousal--item--img" src="/static/images/people/9.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Hansika aggarwal"><img
+                    class="support__carousal--item--img" src="/static/images/people/10.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Tanya Makkar"><img
+                    class="support__carousal--item--img" src="/static/images/people/11.jpg" /></a>
+            <a class="support__carousal--item" data-hover="S Sudheer"><img
+                    class="support__carousal--item--img" src="/static/images/people/12.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Chetan katyal"><img
+                    class="support__carousal--item--img" src="/static/images/people/13.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Tripuresh Tripathi"><img
+                    class="support__carousal--item--img" src="/static/images/people/14.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Rahul Saxena"><img
+                    class="support__carousal--item--img" src="/static/images/people/15.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Deshak Bhatnagar"><img
+                    class="support__carousal--item--img" src="/static/images/people/16.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Aniket Yadav"><img
+                    class="support__carousal--item--img" src="/static/images/people/17.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Farhan"><img class="support__carousal--item--img"
+                    src="/static/images/people/18.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Simarpreet kohli"><img
+                    class="support__carousal--item--img" src="/static/images/people/19.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Vishal"><img class="support__carousal--item--img"
+                    src="/static/images/people/20.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Saib Ahmed"><img
+                    class="support__carousal--item--img" src="/static/images/people/21.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Sahil misra"><img
+                    class="support__carousal--item--img" src="/static/images/people/22.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Samaksh goel"><img
+                    class="support__carousal--item--img" src="/static/images/people/23.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Abhishek Hitaishi"><img
+                    class="support__carousal--item--img" src="/static/images/people/24.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Kislay sinha"><img
+                    class="support__carousal--item--img" src="/static/images/people/25.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Bharat Khurana"><img
+                    class="support__carousal--item--img" src="/static/images/people/26.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Kartikeya"><img
+                    class="support__carousal--item--img" src="/static/images/people/27.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Ram Dewani"><img
+                    class="support__carousal--item--img" src="/static/images/people/28.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Prabhat singh"><img
+                    class="support__carousal--item--img" src="/static/images/people/29.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Anshul"><img class="support__carousal--item--img"
+                    src="/static/images/people/30.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Shivvi Wadhera"><img
+                    class="support__carousal--item--img" src="/static/images/people/31.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Deepak Rawat"><img
+                    class="support__carousal--item--img" src="/static/images/people/32.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/33.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Shivam"><img class="support__carousal--item--img"
+                    src="/static/images/people/34.jpg" /></a>
+            <a class="support__carousal--item" data-hover="vivek"><img class="support__carousal--item--img"
+                    src="/static/images/people/35.jpg" /></a>
+            <a class="support__carousal--item" data-hover="saloni"><img class="support__carousal--item--img"
+                    src="/static/images/people/36.jpg" /></a>
+            <a class="support__carousal--item" data-hover="sarandeep"><img
+                    class="support__carousal--item--img" src="/static/images/people/37.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Harshwardhan"><img
+                    class="support__carousal--item--img" src="/static/images/people/38.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Aman sharma"><img
+                    class="support__carousal--item--img" src="/static/images/people/39.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Ravi"><img class="support__carousal--item--img"
+                    src="/static/images/people/40.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Aseem"><img class="support__carousal--item--img"
+                    src="/static/images/people/41.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Krishna"><img class="support__carousal--item--img"
+                    src="/static/images/people/42.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Ashish"><img class="support__carousal--item--img"
+                    src="/static/images/people/43.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Pulkit"><img class="support__carousal--item--img"
+                    src="/static/images/people/44.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Bhavya"><img class="support__carousal--item--img"
+                    src="/static/images/people/45.jpg" /></a>
+            <a class="support__carousal--item" data-hover="IndianCodingGirl"><img
+                    class="support__carousal--item--img" src="/static/images/people/46.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Arpit"><img class="support__carousal--item--img"
+                    src="/static/images/people/47.jpg" /></a>
+            <a class="support__carousal--item" data-hover="umit"><img class="support__carousal--item--img"
+                    src="/static/images/people/48.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/49.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/50.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Lamhit"><img class="support__carousal--item--img"
+                    src="/static/images/people/51.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/52.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Gaurav"><img class="support__carousal--item--img"
+                    src="/static/images/people/53.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Lisa"><img class="support__carousal--item--img"
+                    src="/static/images/people/54.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/55.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Santosh"><img class="support__carousal--item--img"
+                    src="/static/images/people/56.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/57.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Ale chani"><img
+                    class="support__carousal--item--img" src="/static/images/people/58.jpg" /></a>
+            <a class="support__carousal--item" data-hover="DL"><img class="support__carousal--item--img"
+                    src="/static/images/people/59.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Sid"><img class="support__carousal--item--img"
+                    src="/static/images/people/60.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Mohit"><img class="support__carousal--item--img"
+                    src="/static/images/people/61.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Wrongeek"><img
+                    class="support__carousal--item--img" src="/static/images/people/62.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/63.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Naby"><img class="support__carousal--item--img"
+                    src="/static/images/people/64.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/65.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Rifat"><img class="support__carousal--item--img"
+                    src="/static/images/people/66.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/67.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/68.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/69.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Saumyamani"><img
+                    class="support__carousal--item--img" src="/static/images/people/70.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Andrew"><img class="support__carousal--item--img"
+                    src="/static/images/people/71.jpg" /></a>
+            <a class="support__carousal--item" data-hover="thewolfcodr"><img
+                    class="support__carousal--item--img" src="/static/images/people/72.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Raghav"><img class="support__carousal--item--img"
+                    src="/static/images/people/73.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/74.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Shantunu"><img
+                    class="support__carousal--item--img" src="/static/images/people/75.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Swuyekhoyi"><img
+                    class="support__carousal--item--img" src="/static/images/people/76.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Devesh"><img class="support__carousal--item--img"
+                    src="/static/images/people/77.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Manny Blue"><img
+                    class="support__carousal--item--img" src="/static/images/people/78.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Urvashi"><img class="support__carousal--item--img"
+                    src="/static/images/people/79.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Developerb"><img
+                    class="support__carousal--item--img" src="/static/images/people/80.jpg" /></a>
+            <a class="support__carousal--item" data-hover="CrptoMaven"><img
+                    class="support__carousal--item--img" src="/static/images/people/81.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Somesh Sharma"><img
+                    class="support__carousal--item--img" src="/static/images/people/82.jpg" /></a>
+            <a class="support__carousal--item" data-hover="jkeatinco"><img
+                    class="support__carousal--item--img" src="/static/images/people/83.jpg" /></a>
+            <a class="support__carousal--item" data-hover="codingmiak"><img
+                    class="support__carousal--item--img" src="/static/images/people/84.jpg" /></a>
+            <a class="support__carousal--item" data-hover="amy"><img class="support__carousal--item--img"
+                    src="/static/images/people/85.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Hemant"><img class="support__carousal--item--img"
+                    src="/static/images/people/86.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Tuhin Ghosh"><img
+                    class="support__carousal--item--img" src="/static/images/people/87.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Jure"><img class="support__carousal--item--img"
+                    src="/static/images/people/88.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Sachin Kamat"><img
+                    class="support__carousal--item--img" src="/static/images/people/89.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Saumya"><img class="support__carousal--item--img"
+                    src="/static/images/people/90.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/91.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/92.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Shilpi"><img class="support__carousal--item--img"
+                    src="/static/images/people/93.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/94.jpg" /></a>
+            <a class="support__carousal--item" data-hover=""><img class="support__carousal--item--img"
+                    src="/static/images/people/95.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Sam"><img class="support__carousal--item--img"
+                    src="/static/images/people/96.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Maan"><img class="support__carousal--item--img"
+                    src="/static/images/people/97.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Nikhil Seth"><img
+                    class="support__carousal--item--img" src="/static/images/people/98.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Ralph Greschner"><img
+                    class="support__carousal--item--img" src="/static/images/people/99.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Yash Sharma"><img
+                    class="support__carousal--item--img" src="/static/images/people/100.jpg" /></a>
+            <a class="support__carousal--item" data-hover="Hiroko Kato"><img
+                    class="support__carousal--item--img" src="/static/images/people/101.jpg" /></a>
+        </div>
+    </section>
+<footer>
+    Made with 🧠 by <a target="blank_" href="https://www.rajaraghav.com">Raja Raghav</a><br>
+    Co-designed with ❤️ by <a target="blank_" href="https://www.instagram.com/azime_setol/?hl=en">Azime Setol</a><br>
+</footer>
+
+  {% endblock %}
+</body>
+</html>
