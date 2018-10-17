@@ -1,0 +1,544 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+</head>
+
+<body>
+        {% block pagecontent %}
+        <section class="hero">
+                <div class="hero__intro">
+                        <div class="hero__intro--head">#100DaysOfMLCode</div>
+                        <p class="hero__intro--sub">challenge</p>
+                </div>
+        </section>
+        <section class="overview">
+                <div class="overview__intro">
+                        The challenge
+                </div>
+                <div class="overview__container">
+                        <div class="overview__sec1">
+                                <iframe class="overview__sec1--video" src="https://www.youtube.com/embed/cuQMBj1cWPo?autoplay=1;modestbranding=1;controls=0;showinfo=0;rel=0;fs=1"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="overview__sec2">
+                                <div class="overview__sec2__text overview__sec2--head"><span class="util__color--red">1</span>
+                                        hour of
+                                        <span class="util__color--red">ML</span> Code</div>
+                                <div class="overview__sec2__text overview__sec2--sub"><span class="util__color--red">for
+                                                100</span>
+                                        days</div>
+                                <div class="overview__sec2__text overview__sec2__rules">
+                                        <div class="overview__sec2__text overview__sec2__rules--intro">There are only 3
+                                                rules:
+                                        </div>
+                                        <div class="overview__sec2__text overview__sec2__rules--rule">1. Make a public
+                                                pledge
+                                                using the
+                                                #100DaysofMLCode hashtag on your favorite social media platform. </div>
+                                        <div class="overview__sec2__text overview__sec2__rules--rule">2. Make a public
+                                                log of
+                                                your work that
+                                                you
+                                                update daily, you can do this via GitHub a blog or a vlog. </div>
+                                        <div class="overview__sec2__text overview__sec2__rules--rule">3. if you see
+                                                someone
+                                                make a post using
+                                                the #100DaysofMLCode hashtag, give it a like share or comment.</div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <section class="logs">
+                <div class="logs__intro">
+                        My journey
+                </div>
+                <div class="logs__counter">
+                        <div onclick="prevDay()" class="logs__counter--left"></div>
+                        <div id="logs__counter--text" class="logs__counter--text">Day 0</div>
+                        <div onclick="nextDay()" class="logs__counter--right"></div>
+                </div>
+                <div class="logs__container">
+                        <div class="logs__social">
+                                <div class="logs__social__twitter">
+                                        <div class="tweetsComponent">
+                                                <div class="tweetsComponent__user">
+                                                        <a class="util__noStyleLink" href="https://www.twitter.com/raja__raghav"
+                                                                target="_blank">
+                                                                <img class="tweetsComponent__user--image" src="/static/images/desktopraja1.png"
+                                                                        alt="raja" height="40px" width="auto">
+                                                        </a>
+                                                        <div class="tweetsComponent__user__details">
+                                                                <div class="tweetsComponent__user__details--name">
+                                                                        <a class="util__noStyleLink" href="https://www.twitter.com/raja__raghav"
+                                                                                target="_blank">Raja
+                                                                                Raghav</a>
+                                                                </div>
+                                                                <div class="tweetsComponent__user__details--handle">
+                                                                        @raja__raghav
+                                                                </div>
+                                                        </div>
+                                                        <img class="tweetsComponent__user--twitterLogo" src="/static/images/twitterlogosmall1.png"
+                                                                alt="twitter logo" height="13px" width="auto">
+                                                </div>
+                                                <div id="tweetsComponent__text" class="tweetsComponent__text">
+                                                        "#100DaysOfMLCode \n#Day0 https://t.co/D5vKHOOuM3"
+
+                                                </div>
+                                                <div id="tweetsComponent__date" class="tweetsComponent__date">
+                                                        Thu Jul 05 16:12:52 +0000 2018
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="logs__social__insta">
+                                        <img id="logs__social__insta--story" class="logs__social__insta--story" src="/static/images/insta/d0.jpg" />
+                                </div>
+                        </div>
+                        <div class="logs__code">
+                                <div class="logs__code--gb">
+                                        <a class="github__icon" target="blank_" href="https://github.com/rajaraghav/100DaysOfMLCode">
+                                                <img src="/static/images/gb.png" />
+                                        </a>
+                                </div>
+                                <pre><code id="logs__code" class="language-css">
+                import numpy as np;
+
+                np.random.rand(5)+1;
+                
+                print("#100daysofMLcode");    
+        </code></pre>
+                        </div>
+                </div>
+        </section>
+        <section class="projects">
+                <div class="projects--intro">
+                        Projects developed
+                </div>
+                <div class="projects__container">
+                        <div class="projects__container--1">
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5Bday62%2C%20day63%2C%20day64%2Cday65%2Cday66%2C%20day67%5D">Chatbot</a><svg
+                                                version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5BDay59%2C%20Day60%5D">Gender
+                                                classifier</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5Bday86%2C%20day87%2C%20day88%5D">Credit
+                                                card fraud detection</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                        </div>
+                        <div class="projects__container--2">
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5Bday56%2C%20day57%5D">Ping
+                                                pong AI</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5Bday89%2C%20day90%2Cday91%2Cday92%2Cday93%2Cday94%5D">Email
+                                                spam filter</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                                <div><a targer="blank_" class="util__linkd" href="https://github.com/rajaraghav/100DaysOfMLCode/tree/master/%5Bday69%2Cday70%5D">Realtime
+                                                Object detection</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 130.2 130.2">
+                                                <circle class="spath circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                                <polyline class="spath check" fill="none" stroke="#73AF55" stroke-width="6"
+                                                        stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                        </svg></div>
+                        </div>
+                </div>
+        </section>
+        <section id="pathway" class="pathway">
+                <div class="projects--intro">
+                        How to learn machine learning
+                </div>
+                <div class="path">
+                        <div id="py" data="Python is the most popular language to do machine learning. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('pyImage',this.parentElement,'py')" id="pyImage" class="pathway__mainNode--image"
+                                        src="/static/images/py.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'py')" id="pyImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/pyf.png" />
+                                <div id="pyU" class="pathway__upperContainer util__hidden">
+                                        <div class="pathway__subNode">
+                                                <a target="blank__" href="https://www.udemy.com/python-the-complete-python-developer-course/">Tim's
+                                                        python course</a>
+                                        </div>
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.youtube.com/watch?v=oVp1vrfL_w4&list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M">Sentdexs'
+                                                        Python3(free)</a>
+                                        </div>
+                                        <div id="pyL" class="pathway__lowerContainer util__hidden">
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="maths" data="Mathematics is the foundation of all machine learning models. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('mathsImage',this.parentElement,'maths')" id="mathsImage"
+                                        class="pathway__mainNode--image" src="/static/images/maths.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'maths')" id="mathsImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/mathsf.png" />
+                                <div id="mathsU" class="pathway__upperContainer util__hidden">
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.youtube.com/watch?v=kjBOesZCoqc&index=1&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Algebra
+                                                        like never before</a>
+                                        </div>
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr/">Calculus
+                                                        visualised</a>
+                                        </div>
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.edx.org/course/introduction-probability-science-mitx-6-041x-2">Probability
+                                                        simplified</a>
+                                        </div>
+
+                                </div>
+                                <div id="mathsL" class="pathway__lowerContainer util__hidden">
+                                </div>
+                        </div>
+                        <div id="data" data="Data science is a very important tool to make data ML ready. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('dataImage',this.parentElement,'data')" id="dataImage" class="pathway__mainNode--image"
+                                        src="/static/images/data.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'data')" id="dataImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/dataf.png" />
+                                <div id="dataU" class="pathway__upperContainer util__hidden">
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.youtube.com/watch?v=T5pRlIbr6gg&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU">Python
+                                                        for data science</a>
+                                        </div>
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://www.youtube.com/watch?v=2FmcHiLCwTU&list=PL2-dafEMk2A7EEME489DsI468AB0wQsMV">Intro
+                                                        to tensorflow</a>
+                                        </div>
+                                        <div class="pathway__subNode">
+                                                <a target="blank_" href="https://pythonprogramming.net/data-analysis-python-pandas-tutorial-introduction/">Sentdex's
+                                                        data analytics</a>
+                                        </div>
+
+                                </div>
+                                <div id="dataL" class="pathway__lowerContainer util__hidden">
+                                </div>
+                        </div>
+                        <div id="ml" data="Supervised machine learning takes labeled data and solves complex problems. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('mlImage',this.parentElement,'ml')" id="mlImage" class="pathway__mainNode--image"
+                                        src="/static/images/ml.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'ml')" id="mlImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/mlf.png" />
+                                <div id="mlU" class="pathway__upperContainerl util__hidden">
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://www.udemy.com/machine-learning-course-with-python/">Anthony
+                                                        NG's Complete ML</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://pythonprogramming.net/machine-learning-tutorials/">Sentdex's
+                                                        ML tutorial(free)</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="Intro to ML (Udacity) https://eu.udacity.com/course/intro-to-machine-learning--ud120">Intro
+                                                        to ML</a>
+                                        </div>
+
+                                </div>
+                                <div id="mlL" class="pathway__lowerContainer util__hidden">
+                                </div>
+                        </div>
+                        <div id="dl" data="Deep learning takes unlabeled data and finds hidden patterns in the dataset. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('dlImage',this.parentElement,'dl')" id="dlImage" class="pathway__mainNode--image"
+                                        src="/static/images/dl.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'dl')" id="dlImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/dlf.png" />
+                                <div id="dlU" class="pathway__upperContainerl util__hidden">
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="http://course.fast.ai/lessons/lesson1.html">Fast.ai
+                                                        Deep learning</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://pythonprogramming.net/tensorflow-neural-network-session-machine-learning-tutorial/">Sentdex's
+                                                        Deep learning(Free)</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://www.youtube.com/watch?v=vOppzHpvTiQ&list=PL2-dafEMk2A7YdKv4XfKpfbTH5z6rEEj3">Intro
+                                                        to deep learning</a>
+                                        </div>
+
+                                </div>
+                                <div id="dlL" class="pathway__lowerContainer util__hidden">
+                                </div>
+                        </div>
+                        <div id="kaggle" data="Kaggle is an online community/platform for you to attain mastery in ML by practice. Click to learn more."
+                                class="pathway__mainNode">
+                                <img onclick="clickEvent('kaggleImage',this.parentElement,'kaggle')" id="kaggleImage"
+                                        class="pathway__mainNode--image" src="/static/images/kaggle.png" />
+                                <img onclick="clickEvent('al',this.parentElement,'kaggle')" id="kaggleImageFull" class="pathway__mainNode--image util__hidden"
+                                        src="/static/images/kagglef.png" />
+                                <div id="kaggleU" class="pathway__upperContainerl util__hidden">
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://medium.com/machine-learning-in-practice/my-curated-list-of-ai-and-machine-learning-resources-from-around-the-web-9a97823b8524">More
+                                                        content</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://medium.com/machine-learning-in-practice/cheat-sheet-of-machine-learning-and-python-and-math-cheat-sheets-a4afe4e791b6">Cheat
+                                                        Sheet</a>
+                                        </div>
+                                        <div class="pathway__subNodel">
+                                                <a target="blank_" href="https://machinelearningmastery.com/get-started-with-kaggle/">Getting
+                                                        started with Kaggle</a>
+                                        </div>
+
+                                </div>
+                                <div id="kaggleL" class="pathway__lowerContainer util__hidden">
+                                </div>
+                        </div>
+
+                </div>
+        </section>
+        <section class="support">
+                <div class="support__intro">
+                        <p class="support__intro--head">
+                                Mad love❤️ and support🙌🏼
+                        </p>
+                        <p class="support__intro--sub">
+                                Shoutout📢 to all the supporters.
+                        </p>
+                </div>
+                <div class="support__carousal">
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ayush Jindal"><img
+                                        class="support__carousal--item--img" src="/static/images/people/1.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Azime Setol"><img
+                                        class="support__carousal--item--img" src="/static/images/people/2.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Sergio Sánchez Vallés"><img
+                                        class="support__carousal--item--img" src="/static/images/people/3.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Mike 'Broski' "><img
+                                        class="support__carousal--item--img" src="/static/images/people/4.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Chandan Kapoor"><img
+                                        class="support__carousal--item--img" src="/static/images/people/5.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Siya Sharma"><img
+                                        class="support__carousal--item--img" src="/static/images/people/6.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Siraj Raval"><img
+                                        class="support__carousal--item--img" src="/static/images/people/7.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Bhaskar Parashar"><img
+                                        class="support__carousal--item--img" src="/static/images/people/8.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Gurpreet gill"><img
+                                        class="support__carousal--item--img" src="/static/images/people/9.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Hansika aggarwal"><img
+                                        class="support__carousal--item--img" src="/static/images/people/10.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Tanya Makkar"><img
+                                        class="support__carousal--item--img" src="/static/images/people/11.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="S Sudheer"><img
+                                        class="support__carousal--item--img" src="/static/images/people/12.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Chetan katyal"><img
+                                        class="support__carousal--item--img" src="/static/images/people/13.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Tripuresh Tripathi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/14.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Rahul Saxena"><img
+                                        class="support__carousal--item--img" src="/static/images/people/15.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Deshak Bhatnagar"><img
+                                        class="support__carousal--item--img" src="/static/images/people/16.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Aniket Yadav"><img
+                                        class="support__carousal--item--img" src="/static/images/people/17.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Farhan"><img
+                                        class="support__carousal--item--img" src="/static/images/people/18.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Simarpreet kohli"><img
+                                        class="support__carousal--item--img" src="/static/images/people/19.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Vishal"><img
+                                        class="support__carousal--item--img" src="/static/images/people/20.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Saib Ahmed"><img
+                                        class="support__carousal--item--img" src="/static/images/people/21.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Sahil misra"><img
+                                        class="support__carousal--item--img" src="/static/images/people/22.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Samaksh goel"><img
+                                        class="support__carousal--item--img" src="/static/images/people/23.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Abhishek Hitaishi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/24.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Kislay sinha"><img
+                                        class="support__carousal--item--img" src="/static/images/people/25.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Bharat Khurana"><img
+                                        class="support__carousal--item--img" src="/static/images/people/26.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Kartikeya"><img
+                                        class="support__carousal--item--img" src="/static/images/people/27.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ram Dewani"><img
+                                        class="support__carousal--item--img" src="/static/images/people/28.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Prabhat singh"><img
+                                        class="support__carousal--item--img" src="/static/images/people/29.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Anshul"><img
+                                        class="support__carousal--item--img" src="/static/images/people/30.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Shivvi Wadhera"><img
+                                        class="support__carousal--item--img" src="/static/images/people/31.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Deepak Rawat"><img
+                                        class="support__carousal--item--img" src="/static/images/people/32.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/33.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Shivam"><img
+                                        class="support__carousal--item--img" src="/static/images/people/34.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="vivek"><img
+                                        class="support__carousal--item--img" src="/static/images/people/35.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="saloni"><img
+                                        class="support__carousal--item--img" src="/static/images/people/36.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="sarandeep"><img
+                                        class="support__carousal--item--img" src="/static/images/people/37.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Harshwardhan"><img
+                                        class="support__carousal--item--img" src="/static/images/people/38.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Aman sharma"><img
+                                        class="support__carousal--item--img" src="/static/images/people/39.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ravi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/40.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Aseem"><img
+                                        class="support__carousal--item--img" src="/static/images/people/41.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Krishna"><img
+                                        class="support__carousal--item--img" src="/static/images/people/42.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ashish"><img
+                                        class="support__carousal--item--img" src="/static/images/people/43.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Pulkit"><img
+                                        class="support__carousal--item--img" src="/static/images/people/44.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Bhavya"><img
+                                        class="support__carousal--item--img" src="/static/images/people/45.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="IndianCodingGirl"><img
+                                        class="support__carousal--item--img" src="/static/images/people/46.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Arpit"><img
+                                        class="support__carousal--item--img" src="/static/images/people/47.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="umit"><img
+                                        class="support__carousal--item--img" src="/static/images/people/48.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/49.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/50.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Lamhit"><img
+                                        class="support__carousal--item--img" src="/static/images/people/51.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/52.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Gaurav"><img
+                                        class="support__carousal--item--img" src="/static/images/people/53.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Lisa"><img
+                                        class="support__carousal--item--img" src="/static/images/people/54.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/55.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Santosh"><img
+                                        class="support__carousal--item--img" src="/static/images/people/56.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/57.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ale chani"><img
+                                        class="support__carousal--item--img" src="/static/images/people/58.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="DL"><img
+                                        class="support__carousal--item--img" src="/static/images/people/59.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Sid"><img
+                                        class="support__carousal--item--img" src="/static/images/people/60.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Mohit"><img
+                                        class="support__carousal--item--img" src="/static/images/people/61.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Wrongeek"><img
+                                        class="support__carousal--item--img" src="/static/images/people/62.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/63.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Naby"><img
+                                        class="support__carousal--item--img" src="/static/images/people/64.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/65.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Rifat"><img
+                                        class="support__carousal--item--img" src="/static/images/people/66.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/67.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/68.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/69.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Saumyamani"><img
+                                        class="support__carousal--item--img" src="/static/images/people/70.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Andrew"><img
+                                        class="support__carousal--item--img" src="/static/images/people/71.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="thewolfcodr"><img
+                                        class="support__carousal--item--img" src="/static/images/people/72.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Raghav"><img
+                                        class="support__carousal--item--img" src="/static/images/people/73.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/74.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Shantunu"><img
+                                        class="support__carousal--item--img" src="/static/images/people/75.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Swuyekhoyi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/76.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Devesh"><img
+                                        class="support__carousal--item--img" src="/static/images/people/77.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Manny Blue"><img
+                                        class="support__carousal--item--img" src="/static/images/people/78.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Urvashi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/79.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Developerb"><img
+                                        class="support__carousal--item--img" src="/static/images/people/80.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="CrptoMaven"><img
+                                        class="support__carousal--item--img" src="/static/images/people/81.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Somesh Sharma"><img
+                                        class="support__carousal--item--img" src="/static/images/people/82.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="jkeatinco"><img
+                                        class="support__carousal--item--img" src="/static/images/people/83.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="codingmiak"><img
+                                        class="support__carousal--item--img" src="/static/images/people/84.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="amy"><img
+                                        class="support__carousal--item--img" src="/static/images/people/85.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Hemant"><img
+                                        class="support__carousal--item--img" src="/static/images/people/86.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Tuhin Ghosh"><img
+                                        class="support__carousal--item--img" src="/static/images/people/87.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Jure"><img
+                                        class="support__carousal--item--img" src="/static/images/people/88.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Sachin Kamat"><img
+                                        class="support__carousal--item--img" src="/static/images/people/89.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Saumya"><img
+                                        class="support__carousal--item--img" src="/static/images/people/90.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/91.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/92.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Shilpi"><img
+                                        class="support__carousal--item--img" src="/static/images/people/93.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/94.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover=""><img
+                                        class="support__carousal--item--img" src="/static/images/people/95.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Sam"><img
+                                        class="support__carousal--item--img" src="/static/images/people/96.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Maan"><img
+                                        class="support__carousal--item--img" src="/static/images/people/97.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Nikhil Seth"><img
+                                        class="support__carousal--item--img" src="/static/images/people/98.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Ralph Greschner"><img
+                                        class="support__carousal--item--img" src="/static/images/people/99.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Yash Sharma"><img
+                                        class="support__carousal--item--img" src="/static/images/people/100.jpg" /></a>
+                        <a href="http://google.com" target="blank_" class="support__carousal--item" data-hover="Hiroko Kato"><img
+                                        class="support__carousal--item--img" src="/static/images/people/101.jpg" /></a>
+                </div>
+        </section>
+        <footer>
+                Made with 🧠 by <a target="blank_" href="https://www.rajaraghav.com">Raja Raghav</a><br>
+                Co-designed with ❤️ by <a target="blank_" href="https://www.instagram.com/azime_setol/?hl=en">Azime
+                        Setol</a><br>
+        </footer>
+
+        {% endblock %}
+</body>
+
+</html>
